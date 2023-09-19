@@ -142,7 +142,7 @@ body {
     }
 
     .main h2 {
-        font-size: 18px; /* Adjust the font size for smaller screens */
+        font-size: 20px; /* Adjust the font size for smaller screens */
         line-height: 22px; /* Adjust the line height for smaller screens */
         word-spacing: 0; /* Adjust word spacing if needed */
         letter-spacing: -1px; /* Adjust letter spacing if needed */
@@ -188,7 +188,7 @@ body {
 }
 
 /* Responsive CSS for landscape mode (e.g., phone in landscape orientation) */
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 800px) and (orientation: landscape) {
     .header {
         background-color: #000000;
         z-index: 2;
