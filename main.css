@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center the content */
+    width: 100%;
+    min-height: 100vh; /* Set a minimum height to cover the viewport */
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optionally set to 'fixed' to make the background image stay fixed while scrolling */
+}
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.30);    
+    z-index: 101;
+}
+
+.logo-menu-frame {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.logo-frame {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    z-index: 101;
+}
+
+.logo-image {   
+    padding-top: 7px;     
+    padding-left: 48px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin-right: calc(35%);
+    margin-left: calc(5%);
+    overflow-y: scroll;
+}
+
+.main div h2, .main div p {
+    color: #f3f3f3;
+    margin-bottom: calc(5%);
+}
+
+.main h2 {    
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43.88px;
+}
+
+.heading h2 small {
+    color: #7CC833;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.description p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32.69px;
+}
+
+/* ... (your existing CSS) ... */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 124px;
+    text-align: center;
+    background-color: #000000;
+    z-index: 1;
+}
+
+.footer h3, p {
+    color: #f3f3f3;
+}
+
+.footer-up .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin-bottom: 10px;
+    border-bottom: 0.8px solid #363636;
+}
+
+.contact h3 {
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 2px;
+}
+
+.footer-up h3 {
+    margin-right: 10px; /* Add some space between "Contact us" and the image */
+}
+
+.footer-down p {
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 24.78px;
+}
+
+
+/*  Responsive css */ 
+
+@media screen and (max-width: 480px) {
+    .main {
+        max-width: 90%; /* Adjust the max-width for smaller screens */
+        margin-left: calc(9%);
+        margin-right: 0;
+    }
+
+    .main h2 {
+        font-size: 18px; /* Adjust the font size for smaller screens */
+        line-height: 22px; /* Adjust the line height for smaller screens */
+        word-spacing: 0; /* Adjust word spacing if needed */
+        letter-spacing: -1px; /* Adjust letter spacing if needed */
+    }
+
+    .description p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .footer {
+        height: 80px;
+    }
+
+    .footer-up .contact {
+        height: 40px;
+    }
+
+    .footer-up .contact h3 {
+        font-size: 13px;
+    }
+
+    .footer-up .contact img {
+        height: 15px;
+    }
+    
+    .footer-down p {
+        font-size: 10px;
+    }
+
+    .logo-image {
+        padding-top: 10px;
+        padding-left: 24px;
+    }
+
+    .logo-image a img {
+        height: 40px;
+    }
+}
+
+/* Responsive CSS for landscape mode (e.g., phone in landscape orientation) */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .header {
+        background-color: #000000;
+        z-index: 2;
+    }
+
+    .main {
+        margin-top: calc(13%);
+        height: 400px; 
+        margin-right: calc(7%);  
+        margin-left: calc(8%);  
+        position: relative;
+        z-index: 1;       
+    }
+
+    .main h2 {
+        font-size: 24px; /* Adjust the font size for landscape mode */
+        line-height: 30px; /* Adjust the line height for landscape mode */
+    }
+    
+    .description p {
+        font-size: 14px; /* Adjust the font size for landscape mode */
+        line-height: 26px; /* Adjust the line height for landscape mode */
+    }    
+
+    .footer {
+        height: unset;
+    }
+
+    .footer-up .contact {
+        height: 40px;
+    }
+}
+
