@@ -149,7 +149,7 @@ body {
     }
 
     .description p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 24px;
     }
 
@@ -184,7 +184,7 @@ body {
 }
 
 /* Responsive CSS for landscape mode (e.g., phone in landscape orientation) */
-@media screen and (max-width: 768px) and (orientation: landscape) {
+@media screen and (orientation: landscape) {
     .header {
         background-color: #000000;
         z-index: 2;
