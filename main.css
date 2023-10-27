@@ -226,7 +226,8 @@ body {
         background-color: #000000;
     }
     .main {                
-        overflow-y: auto;        
+        overflow-y: auto;     
+        height: 100px;   
     }
 
     /* Add specific CSS to hide scrollbar in Chrome */
