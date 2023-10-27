@@ -60,8 +60,7 @@ body {
     flex-direction: column;
     max-width: 700px;
     margin-right: calc(35%);
-    margin-left: calc(5%);
-    overflow-y: scroll;
+    margin-left: calc(5%);    
 }
 
 .main div h2, .main div p {
@@ -71,7 +70,7 @@ body {
 
 .main h2 {    
     font-weight: 800;
-    font-size: 36px;
+    font-size: 35px;
     line-height: 43.88px;
 }
 
