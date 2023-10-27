@@ -195,11 +195,26 @@ body {
 
     .main {
         margin-top: calc(13%);
-        height: unset !important; 
+        height: 400px !important; 
         margin-right: calc(7%);  
         margin-left: calc(8%);  
         position: relative;
-        z-index: 1;       
+        z-index: 1;     
+        overflow-y: auto;  
+    }
+
+    /* Add specific CSS to hide scrollbar in Chrome */
+    .main::-webkit-scrollbar {
+        width: 0.5em;
+    }
+
+    .main::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .main::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border: none;
     }
 
     .main h2 {
