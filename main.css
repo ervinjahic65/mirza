@@ -225,5 +225,23 @@ body {
     .header {
         background-color: #000000;
     }
+    .main {                
+        overflow-y: auto;        
+    }
+
+    /* Add specific CSS to hide scrollbar in Chrome */
+    .main::-webkit-scrollbar {
+        width: 0.5em;
+    }
+
+    .main::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .main::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border: none;
+    }
 }
+
 
