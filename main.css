@@ -221,3 +221,9 @@ body {
     }
 }
 
+@media (max-height: 460px) {
+    .header {
+        background-color: #000000;
+    }
+}
+
